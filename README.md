@@ -1,41 +1,34 @@
 # Canopy Homebrew Tap
 
-Official Homebrew tap for [Canopy](https://github.com/CanopyHQ/canopy) tools.
+Official Homebrew tap for [Canopy](https://github.com/CanopyHQ/canopy) - AI development platform.
 
-## Installation
+## Install
 
 ```bash
-brew tap canopyhq/tap
-brew install canopy
+brew install canopyhq/tap/canopy
 ```
 
-## Available Formulas
+That's it. One command.
 
-| Formula | Description |
-|---------|-------------|
-| `canopy` | Full platform (Cambium + Phloem) |
-| `cambium` | LLM proxy with cost optimization |
-| `phloem` | AI memory layer |
+## What You Get (FREE)
+
+- **70% savings** on LLM API costs (cross-provider arbitrage)
+- **AI that remembers** across sessions (persistent memory)
+- Works with Claude, GPT, Gemini, Llama, and 360+ models
 
 ## Quick Start
 
 ```bash
-# Install everything
 brew install canopyhq/tap/canopy
-
-# Run setup wizard
 canopy setup
-
-# Or install individually
-brew install canopyhq/tap/cambium
-brew install canopyhq/tap/phloem
 ```
 
-## What You Get (FREE)
+## Individual Components
 
-- **70% savings** on LLM API costs (Cambium arbitrage)
-- **AI that remembers** across sessions (Phloem memory)
-- Works with Claude, GPT, Gemini, Llama, and 360+ models
+```bash
+brew install canopyhq/tap/cambium   # Just the LLM proxy
+brew install canopyhq/tap/phloem    # Just the memory layer
+```
 
 ## Links
 
