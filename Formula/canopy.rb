@@ -10,10 +10,10 @@ class Canopy < Formula
   license "MIT"
 
   if Hardware::CPU.arm?
-    url "https://github.com/CanopyHQ/canopy/releases/download/v0.5.0-beta/canopy-0.5.0-beta-darwin-arm64.tar.gz"
+    url "https://github.com/CanopyHQ/canopy-releases/releases/download/v0.5.0-beta/canopy-0.5.0-beta-darwin-arm64.tar.gz"
     sha256 "88ced9929edf17bb0858b51e6478ee35f6939f652e563ea3ba55bcb5aa2994ac"
   else
-    url "https://github.com/CanopyHQ/canopy/releases/download/v0.5.0-beta/canopy-0.5.0-beta-darwin-amd64.tar.gz"
+    url "https://github.com/CanopyHQ/canopy-releases/releases/download/v0.5.0-beta/canopy-0.5.0-beta-darwin-amd64.tar.gz"
     sha256 "593eabcabcace71be4346fd0bcb557538c5b32b73dd0b860bd68fa0d9c400f29"
   end
 
