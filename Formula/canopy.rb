@@ -6,15 +6,15 @@
 class Canopy < Formula
   desc "AI development platform - smart routing + persistent memory"
   homepage "https://github.com/CanopyHQ/canopy"
-  version "0.5.1-beta"
+  version "0.5.3-beta"
   license "MIT"
 
   if Hardware::CPU.arm?
-    url "https://github.com/CanopyHQ/canopy-releases/releases/download/v0.5.1-beta/canopy-0.5.1-beta-darwin-arm64.tar.gz"
-    sha256 "0888d6645c495a6e46f139e60621fcb6dba1c4b7660afdba63a9d86c197ebe8f"
+    url "https://github.com/CanopyHQ/canopy-releases/releases/download/v0.5.3-beta/canopy-0.5.3-beta-darwin-arm64.tar.gz"
+    sha256 "a1e132492d8db24dac3b469c1269ce60cf961592534091ba8f3ef7407c357604"
   else
-    url "https://github.com/CanopyHQ/canopy-releases/releases/download/v0.5.1-beta/canopy-0.5.1-beta-darwin-amd64.tar.gz"
-    sha256 "f6506bd088c2cd8dbaa50d3de7952b67b7238d3eae4bc11db5e2b128f94ad32e"
+    url "https://github.com/CanopyHQ/canopy-releases/releases/download/v0.5.3-beta/canopy-0.5.3-beta-darwin-amd64.tar.gz"
+    sha256 "ca352f1aca568b5913ce4a87fa2f1a41f42b9f376564f155c7187e9fa5559077"
   end
 
   def install
