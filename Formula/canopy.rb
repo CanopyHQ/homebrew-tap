@@ -55,7 +55,7 @@ class Canopy < Formula
           echo "  3. Configure tools to use http://localhost:7777/v1"
           ;;
         version|--version|-v)
-          echo "Canopy v0.5.1-beta"
+          echo "Canopy v0.5.3-beta"
           echo "  Cambium $(cambium version 2>&1 | head -1)"
           echo "  Phloem $(phloem version 2>&1 | head -1)"
           ;;
