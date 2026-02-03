@@ -6,15 +6,15 @@
 class Canopy < Formula
   desc "AI development platform - smart routing + persistent memory"
   homepage "https://github.com/CanopyHQ/canopy"
-  version "0.5.0-beta"
+  version "0.5.1-beta"
   license "MIT"
 
   if Hardware::CPU.arm?
-    url "https://github.com/CanopyHQ/canopy-releases/releases/download/v0.5.0-beta/canopy-0.5.0-beta-darwin-arm64.tar.gz"
-    sha256 "88ced9929edf17bb0858b51e6478ee35f6939f652e563ea3ba55bcb5aa2994ac"
+    url "https://github.com/CanopyHQ/canopy-releases/releases/download/v0.5.1-beta/canopy-0.5.1-beta-darwin-arm64.tar.gz"
+    sha256 "0888d6645c495a6e46f139e60621fcb6dba1c4b7660afdba63a9d86c197ebe8f"
   else
-    url "https://github.com/CanopyHQ/canopy-releases/releases/download/v0.5.0-beta/canopy-0.5.0-beta-darwin-amd64.tar.gz"
-    sha256 "593eabcabcace71be4346fd0bcb557538c5b32b73dd0b860bd68fa0d9c400f29"
+    url "https://github.com/CanopyHQ/canopy-releases/releases/download/v0.5.1-beta/canopy-0.5.1-beta-darwin-amd64.tar.gz"
+    sha256 "f6506bd088c2cd8dbaa50d3de7952b67b7238d3eae4bc11db5e2b128f94ad32e"
   end
 
   def install
@@ -55,7 +55,7 @@ class Canopy < Formula
           echo "  3. Configure tools to use http://localhost:7777/v1"
           ;;
         version|--version|-v)
-          echo "Canopy v0.5.0-beta"
+          echo "Canopy v0.5.1-beta"
           echo "  Cambium $(cambium version 2>&1 | head -1)"
           echo "  Phloem $(phloem version 2>&1 | head -1)"
           ;;
