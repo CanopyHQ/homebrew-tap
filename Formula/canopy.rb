@@ -11,10 +11,10 @@ class Canopy < Formula
 
   if Hardware::CPU.arm?
     url "https://github.com/CanopyHQ/canopy-releases/releases/download/v0.5.4-beta/canopy-0.5.4-beta-darwin-arm64.tar.gz"
-    sha256 "baeae4f405d27b05457a4492e934269d8c7570f40dd8b535cf53dce81b7ae04f"
+    sha256 "bcc2ffb39043d37fc66fa939ff103682413f6a3a416b61a5edb9a35602065b2d"
   else
     url "https://github.com/CanopyHQ/canopy-releases/releases/download/v0.5.4-beta/canopy-0.5.4-beta-darwin-amd64.tar.gz"
-    sha256 "fbc8de800e4ed55eba74f19df880fef5b1209c3ef649570bcb82c51326a2af6d"
+    sha256 "8152d7e4a7f37063e455ccaecc8461029ca382e67001540c71a9a01248b6d8e1"
   end
 
   def install
