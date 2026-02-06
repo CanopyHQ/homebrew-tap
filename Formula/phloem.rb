@@ -10,10 +10,10 @@ class Phloem < Formula
   license "Proprietary"
 
   if Hardware::CPU.arm?
-    url "https://github.com/CanopyHQ/canopy/releases/download/v0.5.4-beta/canopy-darwin-arm64.tar.gz"
+    url "https://github.com/CanopyHQ/canopy-releases/releases/download/v0.5.4-beta/canopy-darwin-arm64.tar.gz"
     sha256 "64a727129ada24111ad2bd13b299f5365b90b998d206756f1ed7d5da8be4d00c"
   else
-    url "https://github.com/CanopyHQ/canopy/releases/download/v0.5.4-beta/canopy-darwin-amd64.tar.gz"
+    url "https://github.com/CanopyHQ/canopy-releases/releases/download/v0.5.4-beta/canopy-darwin-amd64.tar.gz"
     sha256 "1d4f5c20d0fa3c9ef76960b2bf64529ca4e2d7cd9b25e137d719242a22bf6051"
   end
 
