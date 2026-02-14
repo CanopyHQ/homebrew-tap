@@ -1,16 +1,16 @@
 class Canopy < Formula
   desc "AI Memory Layer - Persistent context for your AI tools"
   homepage "https://canopyhq.io"
-  version "0.6.1-beta"
+  version "0.6.5-beta"
   license "Proprietary"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/CanopyHQ/canopy-releases/releases/download/v0.6.1-beta/canopy-darwin-arm64.tar.gz"
-      sha256 "d0f916be32c4bdf682e8e87f8458e00d309c42cf6d6227db233a6443929b564f"
+      url "https://github.com/CanopyHQ/canopy-releases/releases/download/v0.6.5-beta/canopy-darwin-arm64.tar.gz"
+      sha256 "cf4a7a545a641d853be34e445a4dd39c87ec779f9338582749caa0f610e0415e"
     else
-      url "https://github.com/CanopyHQ/canopy-releases/releases/download/v0.6.1-beta/canopy-darwin-amd64.tar.gz"
-      sha256 "028d7370534a570a68ae45aed79e47fcc7e728a7617cd6ed85abf252b2a883f9"
+      url "https://github.com/CanopyHQ/canopy-releases/releases/download/v0.6.5-beta/canopy-darwin-amd64.tar.gz"
+      sha256 "5cbc48f763fc67fe2d1836f80fc352f26e680561250851734df083daa5e2ec4f"
     end
   end
 
@@ -19,7 +19,7 @@ class Canopy < Formula
   end
 
   test do
-    assert_match "Phloem", shell_output("#{bin}/canopy --help")
+    assert_match "0.6.5-beta", shell_output("#{bin}/canopy version")
   end
 
   def caveats
@@ -41,3 +41,4 @@ class Canopy < Formula
     EOS
   end
 end
+
