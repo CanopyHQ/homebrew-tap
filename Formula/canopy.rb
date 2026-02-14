@@ -24,28 +24,20 @@ class Canopy < Formula
 
   def caveats
     <<~EOS
-      🌳 Canopy v0.6.1-beta is installed!
+      Canopy v#{version} is installed!
 
-      Your AI memories travel with you across tools.
-
-      Quick setup for agentic IDE tools (Cursor, Windsurf):
-        Add to ~/.cursor/mcp.json or ~/.windsurf/mcp.json:
-        {
-          "mcpServers": {
-            "phloem": {
-              "command": "#{opt_bin}/canopy",
-              "args": ["serve"]
-            }
-          }
-        }
+      Quick start:
+        canopy setup          Auto-configure your IDE
+        canopy setup cursor   Configure Cursor
+        canopy setup claude-code  Configure Claude Code
 
       Commands:
         canopy serve    - Start MCP server
         canopy status   - View memory stats
-        canopy graft    - Export/import memory grafts
+        canopy support  - Get help
         canopy help     - Full command list
 
-      Documentation: https://canopyhq.io/docs
+      Support: canopy support (or email support@canopyhq.io)
     EOS
   end
 end
