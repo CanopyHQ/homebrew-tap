@@ -1,15 +1,15 @@
 class Canopy < Formula
   desc "AI Memory Layer - Persistent context for your AI tools"
   homepage "https://canopyhq.io"
-  version "0.6.0-beta"
+  version "0.6.1-beta"
   license "Proprietary"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/CanopyHQ/canopy/releases/download/v0.6.0-beta/canopy-darwin-arm64.tar.gz"
+      url "https://github.com/CanopyHQ/canopy-releases/releases/download/v0.6.1-beta/canopy-darwin-arm64.tar.gz"
       sha256 "d0f916be32c4bdf682e8e87f8458e00d309c42cf6d6227db233a6443929b564f"
     else
-      url "https://github.com/CanopyHQ/canopy/releases/download/v0.6.0-beta/canopy-darwin-amd64.tar.gz"
+      url "https://github.com/CanopyHQ/canopy-releases/releases/download/v0.6.1-beta/canopy-darwin-amd64.tar.gz"
       sha256 "028d7370534a570a68ae45aed79e47fcc7e728a7617cd6ed85abf252b2a883f9"
     end
   end
@@ -24,7 +24,7 @@ class Canopy < Formula
 
   def caveats
     <<~EOS
-      🌳 Canopy v0.6.0-beta is installed!
+      🌳 Canopy v0.6.1-beta is installed!
 
       Your AI memories travel with you across tools.
 
