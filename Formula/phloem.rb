@@ -1,63 +1,51 @@
 # typed: false
 # frozen_string_literal: true
 
-# Canopy - AI Memory Layer (Phloem)
-# Local-first persistent memory for AI coding tools via MCP
+# Phloem - Local-first AI Memory with Causal Graphs
+# Persistent context for AI coding tools via MCP
 class Phloem < Formula
-  desc "AI Memory Layer - Persistent context for your AI tools"
-  homepage "https://github.com/CanopyHQ/canopy"
-  version "0.5.4-beta"
-  license "Proprietary"
+  desc "Local-first AI memory with causal graphs via MCP"
+  homepage "https://github.com/CanopyHQ/phloem"
+  version "0.1.1"
+  license "Apache-2.0"
 
   if Hardware::CPU.arm?
-    url "https://github.com/CanopyHQ/canopy-releases/releases/download/v0.5.4-beta/canopy-darwin-arm64.tar.gz"
-    sha256 "64a727129ada24111ad2bd13b299f5365b90b998d206756f1ed7d5da8be4d00c"
+    url "https://github.com/CanopyHQ/phloem/releases/download/v0.1.1/phloem-darwin-arm64.tar.gz"
+    sha256 "e75f54ca0589cbff75383a719c0de17e71da465d0e682ca06d4bc0624b7a3a9a"
   else
-    url "https://github.com/CanopyHQ/canopy-releases/releases/download/v0.5.4-beta/canopy-darwin-amd64.tar.gz"
-    sha256 "1d4f5c20d0fa3c9ef76960b2bf64529ca4e2d7cd9b25e137d719242a22bf6051"
+    url "https://github.com/CanopyHQ/phloem/releases/download/v0.1.1/phloem-darwin-amd64.tar.gz"
+    sha256 "5092ba9532aabe416cd4364690705edb71945c980a545aed4cf868764f0bc7ab"
   end
 
   def install
-    bin.install "canopy"
+    bin.install "phloem"
   end
 
   def post_install
-    # Create data directory
     (var/"phloem").mkpath
   end
 
   def caveats
     <<~EOS
-      Canopy is installed! 🧠
+      Phloem is installed!
 
       Quick Setup:
-        canopy setup cursor      # Auto-configure Cursor IDE
-        canopy setup windsurf    # Auto-configure Windsurf IDE
-
-      Or manually add to ~/.cursor/mcp.json:
-        {
-          "mcpServers": {
-            "phloem": {
-              "command": "#{bin}/canopy",
-              "args": ["serve"]
-            }
-          }
-        }
-
-      Then restart your IDE. Your AI now has persistent memory!
+        phloem setup              # Auto-detect and configure all IDEs
+        phloem setup cursor       # Configure Cursor IDE
+        phloem setup windsurf     # Configure Windsurf IDE
+        phloem setup claude-code  # Configure Claude Code
 
       Commands:
-        canopy status            # Check memory status
-        canopy doctor            # Diagnose setup issues
-        canopy import chatgpt <file>  # Import ChatGPT history
-        canopy import claude <dir>    # Import Claude history
-        canopy help              # Full command list
+        phloem status             # Check memory status
+        phloem doctor             # Diagnose setup issues
+        phloem audit              # Privacy and data audit
+        phloem help               # Full command list
 
-      Documentation: https://github.com/CanopyHQ/canopy
+      Documentation: https://github.com/CanopyHQ/phloem
     EOS
   end
 
   test do
-    assert_match "canopy", shell_output("#{bin}/canopy version 2>&1")
+    assert_match "phloem", shell_output("#{bin}/phloem version 2>&1")
   end
 end
