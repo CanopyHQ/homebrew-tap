@@ -6,15 +6,15 @@
 class Phloem < Formula
   desc "Local-first AI memory with causal graphs via MCP"
   homepage "https://github.com/CanopyHQ/phloem"
-  version "0.1.1"
+  version "0.1.2"
   license "Apache-2.0"
 
   if Hardware::CPU.arm?
-    url "https://github.com/CanopyHQ/phloem/releases/download/v0.1.1/phloem-darwin-arm64.tar.gz"
-    sha256 "e75f54ca0589cbff75383a719c0de17e71da465d0e682ca06d4bc0624b7a3a9a"
+    url "https://github.com/CanopyHQ/phloem/releases/download/v0.1.2/phloem-darwin-arm64.tar.gz"
+    sha256 "07b78eb72eaaf12d550c5c7942b093c33f7a348358740541c75785b9d79e3294"
   else
-    url "https://github.com/CanopyHQ/phloem/releases/download/v0.1.1/phloem-darwin-amd64.tar.gz"
-    sha256 "5092ba9532aabe416cd4364690705edb71945c980a545aed4cf868764f0bc7ab"
+    url "https://github.com/CanopyHQ/phloem/releases/download/v0.1.2/phloem-darwin-amd64.tar.gz"
+    sha256 "48bff92d3e78324ce53d0e73243afbc6472b26b67a534a8a1a140a09d0eee277"
   end
 
   def install
