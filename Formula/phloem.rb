@@ -6,15 +6,15 @@
 class Phloem < Formula
   desc "Local-first AI memory with causal graphs via MCP"
   homepage "https://github.com/CanopyHQ/phloem"
-  version "0.1.8"
+  version "1.0.0"
   license "Apache-2.0"
 
   if Hardware::CPU.arm?
-    url "https://github.com/CanopyHQ/phloem/releases/download/v0.1.8/phloem-darwin-arm64.tar.gz"
-    sha256 "1305ed08b50e5500967b7bc48910d2b64b15c1a00ebfae1d06068e69e6bd2743"
+    url "https://github.com/CanopyHQ/phloem/releases/download/v1.0.0/phloem-darwin-arm64.tar.gz"
+    sha256 "f1392cf02895fec6722b6069a9e72e601677fc0a8b66846588c13d302c160ff3"
   else
-    url "https://github.com/CanopyHQ/phloem/releases/download/v0.1.8/phloem-darwin-amd64.tar.gz"
-    sha256 "89827b80b383e98b82adb08125bcda48146810df378be0ff161e01ff501e4c6a"
+    url "https://github.com/CanopyHQ/phloem/releases/download/v1.0.0/phloem-darwin-amd64.tar.gz"
+    sha256 "7a2834b0b20953f16ba0427f6273ebf004b35c1b91f13bd0700c15332f8d86b1"
   end
 
   def install
@@ -27,7 +27,7 @@ class Phloem < Formula
 
   def caveats
     <<~EOS
-      Phloem is installed!
+      Phloem v1.0.0 installed!
 
       Quick Setup:
         phloem setup              # Auto-detect and configure all IDEs
